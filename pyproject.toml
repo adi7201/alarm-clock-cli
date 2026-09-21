@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alarm-clock-cli"
+version = "0.1.0"
+description = "A terminal-based alarm clock CLI."
+requires-python = ">=3.8"
+authors = [{ name = "Aditi Singh" }]
+
+[project.scripts]
+alarm = "alarm_clock.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["alarm_clock*"]
